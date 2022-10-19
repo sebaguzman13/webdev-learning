@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <header>
+        <h1>Web Development Learning and Practice</h1>
+        <h3>&lt;Header&gt;</h3>
+        <p>This paragraph and the two lines before this text, are included inside a &lt;header&gt; tag.</p>
+        <p>Header tags are used to represent information that should be on the top of your site. Normally you would
+            include the name of your site, a little description and in most cases the following navigation: </p>
+        <nav>
+            Navigation block
+            <ul>
+                <li>
+                    <a href="list-section">
+                        Lists
+                    </a>
+                </li>
+                <li>
+                    <a href="form-section">
+                        Forms
+                    </a>
+                </li>
+                <li>
+                    <a href="table-section">
+                        Tables
+                    </a>
+                </li>
+                <li>
+                    <a href="article-section">
+                        Articles
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h3>&lt;Aside&gt;</h3>
+        <p>The content included on the &lt;aside&gt; tag, should be information
+            that could be removed from the page at any time and will not affect the
+            behaviour and comprehension of the rest of the content.</p>
+        <p>For example, a list of trending topics from another website, a bunch of advertising images or links, etc.</p>
+    </aside>
+    <main>
+        Main content
+        <!-- Lists section -->
+        <section id="list-section">
+            <h3>Lists</h3>
+            <h4>&lt;ul&gt; Unordered List</h4>
+            <ul>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+
+            <h4>&lt;ol&gt; Unordered List</h4>
+            <ol>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ol>
+        </section>
+
+        <!-- Form section -->
+        <section id="form-section">
+            <h3>Forms</h3>
+            <h4>Login form</h4>
+
+            <form action="" method="POST">
+                <label name="username">Username</label>
+                <input type="text" name="username" id="username" />
+                <br />
+                <label>Password</label>
+                <input type="password" name="password" id="password" />
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h4>Sign up form</h4>
+            <form action="" method="POST">
+                name
+                lastname
+                phone
+                country
+                gender
+                how you hear of us
+                <label name="aditional-info">Aditional Information</label>
+                <textarea id="aditional-info" name="aditional-info" placeholder="" />
+
+                <fieldset id>
+                    <legend>Select a maintenance drone:</legend>
+                    <label for="drone-1">Drone 1</label>
+                    <input type="radio" name="drone" value="drone-1" id="drone-1" />
+
+                    <label for="drone-2">Drone 2</label>
+                    <input type="radio" name="drone" value="drone-1" id="drone-2" />
+
+                    <label for="drone-3">Drone 3</label>
+                    <input type="radio" name="drone" value="drone-3" id="drone-3" />
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h4>Payment form</h4>
+            <form action="" method="">
+                <label name="aditional-info">Aditional Information</label>
+                <textarea id="aditional-info" name="aditional-info" placeholder="" />
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h4 title="Simple contact form">Contact form</h4>
+            <form action="" method="">
+                <label name="aditional-info">Aditional Information</label>
+                <textarea id="aditional-info" name="aditional-info" placeholder="" />
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h4>Survey</h4>
+            <form>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Tables section -->
+        <section id="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Encabezado 1</th>
+                    </tr>
+                    <tr>
+                        <th>Encabezado 2</th>
+                    </tr>
+                    <tr>
+                        <th>Encabezado 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celda 1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="list-section">Celda 2</a></td>
+                    </tr>
+                    <tr>
+                        <td>Celda 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                    </tr>
+                    <tr>
+                        <td>Footer 2</td>
+                    </tr>
+                    <tr>
+                        <td>Footer 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Article tags-->
+        <section id="article-section">
+            <h3>Article section</h4>
+                <p>
+                    The tag &lt;article&gt; is meant to represent a piece of information that
+                    can be understood alone, without having another reference. <br />
+                    For example a newspaper article, or a magazine interview, a movie review, are all examples
+                    of stuff that could be placed inside an &lt;article&gt; tag.
+                </p>
+
+                <article>
+                    <h3>Article Title</h3>
+                    <h4>Subtitle</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aliquid illum quaerat voluptatem,
+                        odio, minima vel, maiores similique atque suscipit quidem dolorem? Hic illo praesentium ullam
+                        vitae
+                        sequi. Reprehenderit, nesciunt?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aliquid illum quaerat voluptatem,
+                        odio, minima vel, maiores similique atque suscipit quidem dolorem? Hic illo praesentium ullam
+                        vitae
+                        sequi. Reprehenderit, nesciunt?
+                    </p>
+                </article>
+                <!-- Newspaper article with quotations -->
+                <article>
+                    <h3>Article Title</h3>
+                    <h4>Subtitle</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aliquid illum quaerat voluptatem,
+                        odio, minima vel, maiores similique atque suscipit quidem dolorem? Hic illo praesentium ullam
+                        vitae
+                        sequi. Reprehenderit, nesciunt?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aliquid illum quaerat voluptatem,
+                        odio, minima vel, maiores similique atque suscipit quidem dolorem? Hic illo praesentium ullam
+                        vitae
+                        sequi. Reprehenderit, nesciunt?
+                    </p>
+                </article>
+                <!-- Finance report with a table -->
+                <article>
+                    <h3>Article Title</h3>
+                    <h4>Subtitle</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aliquid illum quaerat voluptatem,
+                        odio, minima vel, maiores similique atque suscipit quidem dolorem? Hic illo praesentium ullam
+                        vitae
+                        sequi. Reprehenderit, nesciunt?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt aliquid illum quaerat voluptatem,
+                        odio, minima vel, maiores similique atque suscipit quidem dolorem? Hic illo praesentium ullam
+                        vitae
+                        sequi. Reprehenderit, nesciunt?
+                    </p>
+                    <blockquote>
+                        This is &lt;blockquote&gt; referencing some other content in another page of this site or an
+                        external source.
+                    </blockquote>
+
+                    <p>
+                        But there are also little quotes that can be used for example if we want
+                        to say <q>Mas vale pajaro en mano que cien volando</q>
+                    </p>
+                </article>
+        </section>
+        <!-- Next Meet section -->
+        <section>
+            <h3>Next Meet</h3>
+            <ol>
+                <li>dialog elements</li>
+                <li>Images, video, audio tags</li>
+                <li>Inline styles and CSS files + imports</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <h3>Footer</h3>
+        <p>
+            This is the &lt;Footer&gt; tag content.
+            As you may have notice is used to place the information that would normally go at the bottom of a site,
+            magazine, book page, etc. 
+        </p>
+        <p>&copy; 2022 EFS School</p>
+    </footer>
+</body>
+
+</html>
