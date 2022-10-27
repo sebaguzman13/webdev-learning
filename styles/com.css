@@ -1,0 +1,16 @@
+body {
+    background-image: url('../assets/bg-image.jpg');
+    color: white;
+}
+
+.test {
+    padding: 1.3em;
+    border: 2px solid orange;
+}
+
+.test .row > div {
+    background-color: darkgoldenrod;
+    /* margin: 5px; */
+    padding: 10px;
+    border: 1px solid green;
+}
