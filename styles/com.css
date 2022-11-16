@@ -11,8 +11,13 @@ body {
   }
 
 .test {
-    padding: 1.3em;
     border: 2px solid orange;
+    margin-bottom: 25px;
+}
+
+.test:nth-child(2) {
+    margin-top: 25px;
+    background-color: red;
 }
 
 .test .row > div {
@@ -20,4 +25,17 @@ body {
     /* margin: 5px; */
     padding: 10px;
     border: 1px solid green;
+}
+
+.image-examples .row > div {
+    background-color: transparent;
+    padding: 0;
+}
+
+.width-sm {
+    max-width: 720px
+}
+
+.table {
+    background-color: antiquewhite;
 }
