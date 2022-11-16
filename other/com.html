@@ -13,23 +13,23 @@
 </head>
 
 <body>
-
-    <div class="container text-center test">
+<!-- Breakpoint 768px => max-width: 720px ... -->
+    <div class="container-md text-center test">
         <div class="row row-eq-height">
-            <div class="col-2">
+            <div class="col-6 col-sm-4 col-md-2">
                 One of three columns
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-4 col-md-2">
                 One of three columns
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-9 col-md-4">
                 Bigger
                 One of three columns
             </div>
-            <div class="col">
+            <div class="col-6 col-sm-4 col-md-2">
                 One of three columns
             </div>
-            <div class="col">
+            <div class="col-6 col-sm-4 col-md-2">
                 One of three columns
             </div>
         </div>
@@ -56,9 +56,102 @@
             </div>
         </div>
     </div>
+<!-- This will ocupy the entire width always-->
+    <div class="container-fluid text-center test">
+        <div class="row">
+            <div class="col-4">
+                Columna
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                Columna
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                Columna
+            </div>
+        </div>
+    </div>
+<!-- Breakpoint 576px => max-width: 540px ... -->
+    <div class="container-sm text-end test image-examples">
+        <div class="row">
+            <div class="col-12">
+                <img src="../assets/profesionales.jpg" class="img-fluid" alt="Brain scan images" title="Brain scans">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="../assets/profesionales.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-10">
+                <img src="../assets/profesionales.jpg" class="img-thumbnail" alt="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="../assets/profesionales.jpg" class="img-fluid rounded float-start width-sm" alt="...">
+                <img src="../assets/profesionales.jpg" class="img-fluid rounded float-end width-sm" alt="...">
+            </div>
+        </div>
+    </div>
 
+    <img style="float: right" src="../assets/profesionales.jpg" class="rounded width-sm" alt="...">
+    <p style="width: 40ch">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
+    <div class="container-fluid">
+        <div class="row">
+        </div>
+    </div>
 
+    <table class="table">
+        <caption>List of users</caption>
+        <thead>
+          <tr>
+            <th >#</th>
+            <th >First</th>
+            <th >Last</th>
+            <th >Handle</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th >1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th >2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th >3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <article>
+        <h4>Escaneos Geniales</h4>
+          <figure>
+            <img src="../assets/profesionales.jpg" class="rounded width-sm" alt="...">
+          </figure>
+          <p>Este esel mejor producto de todoa la tierra</p>
+          <p>$9857.56</p>
+      </article>
+
+      <figure class="figure">
+        <img src="../assets/fire-icon.png" class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+      </figure>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
