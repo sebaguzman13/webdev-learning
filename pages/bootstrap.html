@@ -10,9 +10,65 @@
 </head>
 
 <body>
-  <h1>This page is to test Bootstrap Components !</h1>
 
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./../assets/fire-icon.png" style="height: 60px;"/>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- You can change the mobile menu icon changing the following span element -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            
+            <!-- Menu desplegable -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
   <main class="container">
+    <h1>This page is to test Bootstrap Components !</h1>
+    <div class="alert alert-primary" role="alert">
+      <a href="https://getbootstrap.com/docs/5.2/components/alerts/" target="_blank" referrerpolicy="nonreferrer">
+        ES EL BLACK MIERCOLES !!
+      </a>
+    </div>
+
     <h3>FAQS</h3>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
@@ -191,7 +247,7 @@
 
     <h3>Notifications</h3>
 
-    <button type="button" class="btn btn-primary">
+    <button type="button" class="btn btn-warning">
       Notifications <span class="badge text-bg-secondary">4</span>
     </button>
 
@@ -199,8 +255,8 @@
       Notifications <span class="badge text-bg-success">4</span>
     </button>
 
-    <button type="button" class="btn btn-primary">
-      Notifications <span class="badge text-bg-primary">4</span>
+    <button type="button" class="btn btn-danger">
+      Notifications <span class="badge text-bg-light">4</span>
     </button>
 
     <br />
@@ -220,26 +276,94 @@
     <button type="button" class="btn btn-info">Info</button>
     <button type="button" class="btn btn-light">Light</button>
     <button type="button" class="btn btn-dark">Dark</button>
-
+    <button type="button" class="btn btn-primary">
+      <img 
+      src="./../assets/fire-icon.png"
+      style="height: 64px;"
+      />
+    </button>
     <button type="button" class="btn btn-link">Link</button>
 
     <br />
     <br />
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-primary">
+      <img 
+      src="./../assets/fire-icon.png"
+      style="height: 64px;"
+      />
+    </button>
+    <button type="button" class="btn btn-outline-link">Link</button>
+
     <br />
     <br />
 
     <div class="btn-group" role="group" aria-label="Basic example">
+
       <button type="button" class="btn btn-primary">Left</button>
       <button type="button" class="btn btn-primary">Middle</button>
-      <button type="button" class="btn btn-primary">Right</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-primary">Middle</button>
+      <button type="button" class="btn btn-primary">
+        <img 
+        src="./../assets/fire-icon.png"
+        style="height: 24px;"
+        />
+      </button>
+      <button type="button" class="btn btn-danger">
+        Notifications <span class="badge text-bg-light">4</span>
+      </button>
     </div>
 
     <br />
     <br />
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+
+      <button type="button" class="btn btn-outline-primary">Left</button>
+      <button type="button" class="btn btn-outline-primary">Middle</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-primary">Middle</button>
+      <button type="button" class="btn btn-outline-primary">
+        <img 
+        src="./../assets/fire-icon.png"
+        style="height: 24px;"
+        />
+      </button>
+      <button type="button" class="btn btn-outline-danger">
+        Notifications <span class="badge text-bg-light">4</span>
+      </button>
+    </div>
+
+
     <br />
     <br />
 
-
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
 
 
     <br />
